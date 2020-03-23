@@ -73,82 +73,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-MV_note" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/03/23/MV_note/" class="article-date">
-  <time datetime="2020-03-23T07:04:26.000Z" itemprop="datePublished">2020-03-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/03/23/MV_note/">MV_</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="关于MVC和MVP架构"><a href="#关于MVC和MVP架构" class="headerlink" title="关于MVC和MVP架构"></a>关于MVC和MVP架构</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">可能有问题的笔记，这些只是我个人的了解</span><br></pre></td></tr></table></figure>
-
-<h2 id="MVC架构"><a href="#MVC架构" class="headerlink" title="MVC架构"></a>MVC架构</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>MVC架构分为<strong>Model</strong>层（数据）、<strong>View</strong>层（视觉）和<strong>Controller</strong>层（控制）  </p>
-<table>
-<thead>
-<tr>
-<th align="center"><strong>Model</strong>层</th>
-<th align="center"><strong>View</strong>层</th>
-<th align="center"><strong>Controller</strong>层</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">处理数据</td>
-<td align="center">处理视图</td>
-<td align="center">连接前两者的中介层</td>
-</tr>
-<tr>
-<td align="center">处理应用程序数据逻辑的部分</td>
-<td align="center">处理数据显示的部分</td>
-<td align="center">处理用户交互的部分</td>
-</tr>
-<tr>
-<td align="center">通常负责在数据库中存取数据</td>
-<td align="center">通常View是依据Model数据创建的</td>
-<td align="center">通常负责从View读取数据，并向Model发送数据</td>
-</tr>
-</tbody></table>
-<p>也就是说，Model层做数据处理等等事务，View层是输出单位，Controller层是接线员  </p>
-<h3 id="对于安卓开发"><a href="#对于安卓开发" class="headerlink" title="对于安卓开发"></a>对于安卓开发</h3><ul>
-<li>个人理解上的对应关系   <ul>
-<li><strong><em>Model层</em></strong> ：据说主要是JavaBean类来扮演这个角色  </li>
-<li><strong><em>View层</em></strong> ：应该是一般的Activity类来扮演这个角色吧  </li>
-<li><strong><em>Controller层</em></strong> ：这个不太清楚，可能是自己定义的类吧  </li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="MVP架构"><a href="#MVP架构" class="headerlink" title="MVP架构"></a>MVP架构</h2><h3 id="基本概念-1"><a href="#基本概念-1" class="headerlink" title="基本概念"></a>基本概念</h3><p>MVP架构分为<strong>Model</strong>层、<strong>View</strong>层、<strong>Presenter</strong>层</p>
-<p>​        与MVC架构不同的是，处理逻辑的部分转移到了<strong>Presenter</strong>层，同时，<strong>View</strong>层和<strong>Model</strong>层无法直接通信，必须借助<strong>Presenter</strong>层才行。</p>
-<p>​        <del>感觉上和MVC架构差不多的样子</del></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://btazsq/2020/03/23/MV_note/" data-id="ck845x9bx00000wu6ctcq1oiz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/03/23/index/" class="article-date">
@@ -214,10 +138,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2020/03/23/MV_note/">MV_</a>
-          </li>
         
           <li>
             <a href="/2020/03/23/index/">home</a>
